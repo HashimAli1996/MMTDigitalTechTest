@@ -5,7 +5,7 @@ using OpenQA.Selenium;
 
 namespace MMTDigitalTechTest.SeleniumUtils
 {
-    class CommonUtils
+    public class CommonUtils
     {
         public void PrintLogs(string LogType, IWebDriver driver)
         {
@@ -26,7 +26,7 @@ namespace MMTDigitalTechTest.SeleniumUtils
                         sw.WriteLine(log.ToString());
                         sw.Close();
                     }
-                    TestContext.AddTestAttachment(filePath, "Browser Console Logs")
+                    TestContext.AddTestAttachment(filePath, "Browser Console Logs");
                 }
             }
             catch

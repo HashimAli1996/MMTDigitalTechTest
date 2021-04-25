@@ -1,16 +1,29 @@
-﻿using OpenQA.Selenium;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Support.UI;
 
 namespace MMTDigitalTechTest.PageObjects
 {
-    class LoginPage : BasePage
+    public class LoginPage
     {
+        public IWebDriver driver;
+        WebDriverWait wait;
 
-        public LoginPage(IWebDriver driver) : base(driver)
+        public LoginPage(IWebDriver driver)
         {
-            LoginPage.driver = driver;
+            this.driver = driver;
+            this.wait = new WebDriverWait(driver, TimeSpan.FromSeconds(60));
+        }
+
+        private IWebElement usernameField => driver.FindElement(By.Id("user-name"));
+        private IWebElement passwordField => driver.FindElement(By.Id("password"));
+        private IWebElement loginBtn => driver.FindElement(By.Id("login-button"));
+
+        public void Login()
+        {
+            usernameField.SendKeys("standard_user");
+            passwordField.SendKeys("secret_sauce");
+            loginBtn.Click();
         }
 
 

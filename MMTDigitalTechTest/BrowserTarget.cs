@@ -5,6 +5,6 @@
         public const string Chrome = "Chrome";
         public const string Edge = "Edge";
         public const string Firefox = "Firefox";
-        public const string Safari = "Safari";
+        public const string IE = "IE";
     }
 }

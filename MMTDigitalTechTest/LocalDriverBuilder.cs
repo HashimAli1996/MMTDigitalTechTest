@@ -11,6 +11,11 @@ namespace MMTDigitalTechTest.SeleniumUtils
 
         private readonly WebDriverFactory factory;
 
+        public LocalDriverBuilder() : this(new WebDriverFactory())
+        {
+
+        }
+
         internal LocalDriverBuilder(WebDriverFactory factory)
         {
             this.factory = factory;
@@ -29,12 +34,12 @@ namespace MMTDigitalTechTest.SeleniumUtils
             {
                 case BrowserTarget.Chrome:
                     return factory.CreateLocalChromeDriver();
-                //case BrowserTarget.Edge:
-                //    return factory.CreateLocalEdgeDriver();
-                //case BrowserTarget.Firefox:
-                //    return factory.CreateLocalFirefoxDriver();
-                //case BrowserTarget.Safari:
-                //    return factory.CreateLocalSafariDriver();
+                case BrowserTarget.Edge:
+                    return factory.CreateLocalEdgeDriver();
+                case BrowserTarget.Firefox:
+                    return factory.CreateLocalFirefoxDriver();
+                case BrowserTarget.IE:
+                    return factory.CreateLocalIEDriver();
                 default:
                     throw new NotSupportedException($"{browserTarget} is not supported local browser type.");
             }
