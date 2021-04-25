@@ -97,4 +97,3 @@ C:\Users\admin\Documents\Personal\MMTDigitalTechTest\MMTDigitalTechTest\obj\Debu
 C:\Users\admin\Documents\Personal\MMTDigitalTechTest\MMTDigitalTechTest\obj\Debug\netcoreapp3.1\MMTDigitalTechTest.dll
 C:\Users\admin\Documents\Personal\MMTDigitalTechTest\MMTDigitalTechTest\obj\Debug\netcoreapp3.1\MMTDigitalTechTest.pdb
 C:\Users\admin\Documents\Personal\MMTDigitalTechTest\MMTDigitalTechTest\obj\Debug\netcoreapp3.1\MMTDigitalTechTest.genruntimeconfig.cache
-C:\Users\admin\Documents\Personal\MMTDigitalTechTest\MMTDigitalTechTest\obj\Debug\netcoreapp3.1\MMTDigitalTechTest.csprojAssemblyReference.cache
