@@ -16,7 +16,7 @@ namespace MMTDigitalTechTest.PageObjects
         public LoginPage(IWebDriver driver)
         {
             this.driver = driver;
-            this.wait = new WebDriverWait(driver, TimeSpan.FromSeconds(60));
+            this.wait = new WebDriverWait(driver, TimeSpan.FromSeconds(30));
             this.action =  new Actions(driver);
         }
 

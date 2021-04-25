@@ -12,16 +12,12 @@ namespace MMTDigitalTechTest.PageObjects
         public BasketPage(IWebDriver driver)
         {
             this.driver = driver;
-            this.wait = new WebDriverWait(driver, TimeSpan.FromSeconds(60));
+            this.wait = new WebDriverWait(driver, TimeSpan.FromSeconds(30));
         }
 
         private IWebElement c => driver.FindElement(By.Id("x"));
         
 
-        public void x()
-        {
-            
-        }
 
 
 
